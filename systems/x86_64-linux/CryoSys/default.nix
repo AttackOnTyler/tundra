@@ -2,10 +2,6 @@
 with lib;
 with lib.${namespace};
 {  
-  imports = [
-    <nixos-wsl/modules>
-  ];
-  
-  wsl.enable = true;
+  tundra.archetypes.wsl = enabled;
   system.stateVersion = "24.05";
 }
